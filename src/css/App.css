@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Banner {
+  margin: 0;
+  background-color: #61dafb;
+  width: 100%;
+}
+
+.Body{
+  padding: 0 100px
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#LinkedinPic {
+  max-width:15%;
+  height:auto;
+  margin-top: 50px
+}
