@@ -16,16 +16,51 @@
   width: 100%;
 }
 
-.Body{
+.Content{
   padding: 0 100px
+}
+
+.ContactInfo {
+  margin: 0;
+  /* background-color: #61dafb; */
+  width: 100%;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-#LinkedinPic {
+.contactLogo {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.contactDetails {
+  display: inline-block;
+}
+
+#LinkedInProfilePic {
   max-width:15%;
   height:auto;
-  margin-top: 50px
+  margin-top: 50px;
+}
+
+#MailLogo {
+  max-width:100%;
+  height:auto;
+}
+
+#PhoneLogo {
+  max-width:5%;
+  height:auto;
+}
+
+#GithubLogo {
+  width:3%;
+  height:auto;
+}
+
+#LinkedInLogo {
+  max-width:6%;
+  height:auto;
 }

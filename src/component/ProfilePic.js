@@ -1,13 +1,13 @@
 import React from 'react'
-import LinkedinPic from '../asset/LinkedinPic.jpg'
+import LinkedInProfilePic from '../asset/LinkedinPic.jpg'
 
 class ProfilePic extends React.Component {
     render() {
         return (
             <div className="ProfilePic">
               <img 
-                  id = 'LinkedinPic'
-                  src= {LinkedinPic}
+                  id = 'LinkedInProfilePic'
+                  src= {LinkedInProfilePic}
                   alt='Jason Chang'/>
             </div>
         )
