@@ -8,7 +8,7 @@ class ProfilePic extends React.Component {
               <img 
                   id = 'LinkedInProfilePic'
                   src= {LinkedInProfilePic}
-                  alt='Jason Chang'/>
+                  alt='A smiling Jason Chang'/>
             </div>
         )
     }
