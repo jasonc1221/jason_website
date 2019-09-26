@@ -20,41 +20,32 @@
   padding: 0 100px
 }
 
+.ContactInfo{
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-.contactLogo {
-  display: inline-block;
-  padding: 0 10px;
+.ContentPic {
+  height: 15em; 
+  width: auto;
+  margin: 50px;
+}
+
+.ContactPic {
+  height: 1.5em; 
+  width: auto;
+  padding: 0 30px;
 }
 
 .ContactDetails {
   display: inline-block;
 }
 
-#LinkedInProfilePic {
-  max-width:15%;
-  height:auto;
-  margin-top: 50px;
-}
-
-#MailLogo {
-  max-width:100%;
-  height:auto;
-}
-
-#PhoneLogo {
-  max-width:5%;
-  height:auto;
-}
-
-#GithubLogo {
-  width:5%;
-  height:auto;
-}
-
-#LinkedInLogo {
-  max-width:6%;
-  height:auto;
+#ProfilePic {
+  height: 15em; 
+  width: auto;
+  padding-top: 30px;
 }

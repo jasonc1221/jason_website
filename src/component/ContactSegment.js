@@ -3,31 +3,33 @@ import React from 'react'
 class ContactSegment extends React.Component{
     state = {
         id: '',
-        contactLogo: '',
-        logoDescription: '',
+        contactPicId: '',
+        contactPic: '',
+        contactPicDescription: '',
         contactDetails: '',
     }
 
     componentDidMount() {
         this.setState({
             id: this.props.id,
-            contactLogo: this.props.contactLogo,
-            logoDescription: this.props.logoDescription,
+            contactPicId: this.props.contactPicId,
+            contactPic: this.props.contactPic,
+            contactPicDescription: this.props.contactPicDescription,
             contactDetails: this.props.contactDetails,
         })
     }
 
     render (){
         let segment
-        if (this.props.contactLogo !== undefined){
-            segment = <img className = 'contactLogo' id = {this.state.id} src = {this.state.contactLogo} alt = {this.state.logoDescription}/>
+        if (this.props.contactPic !== undefined){
+            segment = <img className = 'ContactPic' id = {this.state.contactPicId} src = {this.state.contactPic} alt = {this.state.contactPicDescription}/>
         }
         else{
             segment = null
         }
 
         return(
-            <div className='ContactSegment'>
+            <div className='ContactSegment' id={this.state.id}>
                 {segment}
                 {this.state.contactDetails}
             </div>
