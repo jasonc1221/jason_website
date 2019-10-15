@@ -31,7 +31,7 @@ class ContentSegment extends React.Component{
         }
         return(
             <div className='ContentSegment' id={this.state.id}>
-                <h2>{this.state.contentHeader}</h2>
+                <h2 className='ContentHeader'>{this.state.contentHeader}</h2>
                 {picSegment}
                 {this.state.contentDetails}
             </div>
