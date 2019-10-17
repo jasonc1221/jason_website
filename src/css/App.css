@@ -1,3 +1,6 @@
+hr{
+  width: 60%;
+}
 .App {
   text-align: center;
   background-color: #282c34;
@@ -41,7 +44,11 @@
   color: #a147ca;
 }
 
-.ContentPic {
+.MenuHeader {
+  color: #80bef0ef;
+}
+
+.AboutMePic {
   /* width: 100%;
   height: 100vh; */
   height: auto;
@@ -49,12 +56,8 @@
   padding: 0 5%;
 }
 
-.ContentHeader {
-  padding: 3% 0 0 ;
-}
-
-.ContentDetails {
-  padding: 1% 0;
+.AboutMeDetails {
+  padding: 1% 0 3%;
   margin:0 20%; 
 }
 
@@ -62,17 +65,26 @@
   color: #61dafb;
 }
 
+.Resume{
+  background-color: rgb(180, 88, 88)
+}
+
+.ResumeDetails {
+  margin:0 20%; 
+  padding: 0 0 3% ;
+}
+
 .ContactInfo{
   width: 100%;
+  height: 70vh;
   color: #282c34;
   background-color: #61dafb;
-  margin-top: 5%;
 }
 
 .ContactPic {
   height: 1.5em; 
   width: auto;
-  padding: 0 30px;
+  padding: 0 1%;
 }
 
 .ContactDetails {
@@ -82,13 +94,13 @@
 #ProfilePic {
   height: auto; 
   width: 30%;
-  /* padding-top: 5%; */
 }
-
-/* #AboutMe{
-  padding-top: 5%;
-} */
 
 #Author {
   font-size: 70%;
+}
+
+.col-9{
+  text-align: left;
+  justify-content: left;
 }

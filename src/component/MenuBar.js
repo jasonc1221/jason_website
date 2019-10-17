@@ -1,11 +1,11 @@
 import React from 'react'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 
-class MenuBar extends React.Component{
-    render (){
-        let scrollOffset = -40
-        return(
+class MenuBar extends React.Component {
+    render() {
+        let scrollOffset = -80
+        return (
             <div className='MenuBar'>
                 <h4 className='MenuItems'>
                     <Link
@@ -15,7 +15,7 @@ class MenuBar extends React.Component{
                         smooth={true}
                         offset={scrollOffset}
                         duration={500}
-                        >
+                    >
                         Home
                     </Link>
                 </h4>
@@ -27,7 +27,7 @@ class MenuBar extends React.Component{
                         smooth={true}
                         offset={scrollOffset}
                         duration={500}
-                        >
+                    >
                         About Me
                     </Link>
                 </h4>
@@ -39,7 +39,7 @@ class MenuBar extends React.Component{
                         smooth={true}
                         offset={scrollOffset}
                         duration={500}
-                        >
+                    >
                         Resume
                     </Link>
                 </h4>
@@ -51,7 +51,7 @@ class MenuBar extends React.Component{
                         smooth={true}
                         offset={scrollOffset}
                         duration={500}
-                        >
+                    >
                         Contact Info
                     </Link>
                 </h4>
