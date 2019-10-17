@@ -3,15 +3,22 @@ import ContentSegment from './ContentSegment'
 import ProfilePic from '../asset/ProfilePic4.jpg'
 import TennisPic from '../asset/TennisPic3.JPG'
 import BBQPic from '../asset/BBQPic.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class Content extends React.Component{
     render (){
         return(
             <div className='Content'>
-                <img 
-                id = 'ProfilePic'
-                src= {ProfilePic}
-                alt='A smiling Jason Chang'/>
+                <ScrollAnimation 
+                animateIn='fadeIn'
+                animateOut='fadeOut'
+                >
+                    <img 
+                    id = 'ProfilePic'
+                    src= {ProfilePic}
+                    alt='A smiling Jason Chang'/>
+                </ScrollAnimation>
+                
                 <ContentSegment 
                 id = 'AboutMe'
                 contentHeader = 'About Me'
@@ -68,6 +75,8 @@ class Content extends React.Component{
                         </p>
                     </div>}
                 />
+
+                
             </div>
         )
     }

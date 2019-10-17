@@ -16,7 +16,7 @@
 }
 
 .MenuBar {
-  background-color: black;
+  background-color: #282c34;
   width: 100%;
   position: sticky;
   top: 0px;
@@ -30,12 +30,15 @@
 }
 
 .MenuItems:hover {
-  color: #ff00f2;
+  color: #61dafb;
 }
 
-
 .App-link {
-  color: #ff00f2;
+  color: whitesmoke;
+}
+
+.App-link:hover{
+  color: #a147ca;
 }
 
 .ContentPic {
@@ -79,7 +82,7 @@
 #ProfilePic {
   height: auto; 
   width: 30%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 /* #AboutMe{

@@ -1,6 +1,7 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
-class ContentSegment extends React.Component{
+class ContentSegment extends React.Component {
     state = {
         id: '',
         contentHeader: '',
@@ -21,20 +22,26 @@ class ContentSegment extends React.Component{
         })
     }
 
-    render (){
+    render() {
         let picSegment
-        if (this.props.contentPic !== undefined){
-            picSegment = <img className = 'ContentPic' id = {this.state.picId} src = {this.state.contentPic} alt = {this.state.contentPicDescription}/>
+        if (this.props.contentPic !== undefined) {
+            picSegment = <img className='ContentPic' id={this.state.picId} src={this.state.contentPic} alt={this.state.contentPicDescription} />
         }
-        else{
+        else {
             picSegment = null
         }
-        return(
-            <div className='ContentSegment' id={this.state.id}>
-                <h2 className='ContentHeader'>{this.state.contentHeader}</h2>
-                {picSegment}
-                {this.state.contentDetails}
-            </div>
+        return (
+            <ScrollAnimation
+                animateIn='fadeIn'
+                animateOut='fadeOut'
+            >
+                <div className='ContentSegment' id={this.state.id}>
+                    <h2 className='ContentHeader'>{this.state.contentHeader}</h2>
+                    {picSegment}
+                    {this.state.contentDetails}
+                </div>
+            </ScrollAnimation>
+
         )
     }
 }
