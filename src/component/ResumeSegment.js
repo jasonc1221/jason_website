@@ -4,14 +4,20 @@ import ScrollAnimation from 'react-animate-on-scroll'
 class ResumeSegment extends React.Component {
     state = {
         id: '',
-        resumeHeader: '',
+        title:'',
+        company:'',
+        location:'',
+        date:'',
         details: '',
     }
 
     componentDidMount() {
         this.setState({
             id: this.props.id,
-            resumeHeader: this.props.resumeHeader,
+            title: this.props.title,
+            company: this.props.company,
+            location: this.props.location,
+            date: this.props.date,
             details: this.props.details,
         })
     }
@@ -24,8 +30,18 @@ class ResumeSegment extends React.Component {
                 animatePreScroll={false}
             >
                 <div className='ResumeSegment' id={this.state.id}>
-                    <h2 className='ResumeHeader'>{this.state.resumeHeader}</h2>
-                    {this.state.details}
+                    <div className='row'>
+                        <div className='col-3'>
+                            <p>{this.state.title}</p>
+                            <p>{this.state.company}</p>  
+                            <p>{this.state.location}</p>
+                            <p>{this.state.date}</p>
+                        </div>
+                        <div className='col-9'>
+                            {this.state.details}
+                        </div>
+                    </div>
+                    <br/>
                 </div>
             </ScrollAnimation>
         )

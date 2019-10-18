@@ -17,6 +17,7 @@ class ContactInfo extends React.Component{
                 contactPicDescription = 'Mail Logo'
                 contactDetails = {<p className='ContactDetails'>Email: jasonc1221@gmail.com</p>}
                 />
+                
                 <ContactSegment 
                 id = 'PhoneInfo'
                 contactPicId = 'PhonePic'
@@ -24,6 +25,7 @@ class ContactInfo extends React.Component{
                 contactPicDescription = 'Phone Logo'
                 contactDetails = {<p className='ContactDetails'>Phone Number: (213) 235-7144</p>}
                 />
+                
                 <ContactSegment 
                 id = 'GithubInfo'
                 contactPicId = 'GithubPic'
@@ -31,6 +33,7 @@ class ContactInfo extends React.Component{
                 contactPicDescription = 'Github Logo'
                 contactDetails = {<p className='ContactDetails'>GitHub: <a className='App-link' href='https://www.github.com/jasonc1221'>https://www.github.com/jasonc1221</a></p>}
                 />
+                
                 <ContactSegment 
                 id = 'LinkedinInfo'
                 contactPicId = 'LinkedinPic'
