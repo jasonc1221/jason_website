@@ -3,10 +3,23 @@ import { Link } from 'react-scroll'
 
 
 class MenuBar extends React.Component {
+    state = {
+        height: 0
+    }
+    
+    componentDidMount() {
+        const height = this.MenuBar.clientHeight
+        this.setState({
+            height: height
+        });
+        
+    }
+
     render() {
-        let scrollOffset = -80
+        let scrollOffset = -this.state.height
         return (
-            <div className='MenuBar'>
+            <div className='MenuBar'
+                ref={ (MenuBar) => this.MenuBar = MenuBar}>
                 <h4 className='MenuItems'>
                     <Link
                         activeClass="active"

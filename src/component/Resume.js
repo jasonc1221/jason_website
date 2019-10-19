@@ -22,8 +22,10 @@ class Resume extends React.Component{
                     animatePreScroll={false}
                 >
                     <div className='ResumeHeader'>
-                        <div className='col-3'>
-                            <h3>Education</h3>
+                        <div className='row'>
+                            <div className='col-3'>
+                                <h3>Education</h3>
+                            </div>
                         </div>
                     </div><br/>
                 </ScrollAnimation>
@@ -47,8 +49,10 @@ class Resume extends React.Component{
                     animatePreScroll={false}
                 >
                     <div className='ResumeHeader'>
-                        <div className='col-3'>
-                            <h3>Work Experience</h3>
+                        <div className='row'>
+                            <div className='col-3'>
+                                <h3>Work Experience</h3>
+                            </div>
                         </div>
                     </div><br/>
                 </ScrollAnimation>
@@ -99,8 +103,10 @@ class Resume extends React.Component{
                     animatePreScroll={false}
                 >
                     <div className='ResumeHeader'>
-                        <div className='col-3'>
-                            <h3>Projects</h3>
+                        <div className='row'>
+                            <div className='col-3'>
+                                <h3>Projects</h3>
+                            </div>
                         </div>
                     </div><br/>
                 </ScrollAnimation>

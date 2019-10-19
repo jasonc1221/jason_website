@@ -32,10 +32,10 @@ class ResumeSegment extends React.Component {
                 <div className='ResumeSegment' id={this.state.id}>
                     <div className='row'>
                         <div className='col-3'>
-                            <p>{this.state.title}</p>
-                            <p>{this.state.company}</p>  
-                            <p>{this.state.location}</p>
-                            <p>{this.state.date}</p>
+                            <p className='ResumeTitle'>{this.state.title}</p>
+                            <p className='ResumeCompany'>{this.state.company}</p>  
+                            <p className='ResumeLocation'>{this.state.location}</p>
+                            <p className='ResumeDate'>{this.state.date}</p>
                         </div>
                         <div className='col-9'>
                             {this.state.details}

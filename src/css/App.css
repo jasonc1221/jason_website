@@ -16,19 +16,21 @@ hr{
 .Banner {
   background-color: #61dafb;
   width: 100%;
+  padding: 1% 0;
 }
 
 .MenuBar {
   background-color: #282c34;
-  width: 100%;
+  width: 80%;
   position: sticky;
   top: 0px;
   z-index: 999;
+  padding: 1% 0;
 }
 
 .MenuItems {
   display: inline-block;
-  padding: 0 5em;
+  padding: 0 3em;
   cursor: pointer;
 }
 
@@ -38,6 +40,7 @@ hr{
 
 .App-link {
   color: whitesmoke;
+  text-decoration: underline;
 }
 
 .App-link:hover{
@@ -46,14 +49,19 @@ hr{
 
 .MenuHeader {
   color: #61dafb;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .AboutMePic {
-  /* width: 100%;
-  height: 100vh; */
   height: auto;
   width: 90%;
   padding: 0 5%;
+}
+
+.AboutMeHeader{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .AboutMeDetails {
@@ -63,17 +71,21 @@ hr{
 
 .Quote {
   color: #61dafb;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .Resume{
   background-color: rgb(180, 88, 88);
   width: 100%;
+  padding-top: 5%;
 }
 
 .ResumeHeader{
   text-align: center;
   margin: 0 10%;
   color: #61dafb;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .ResumeSegment{
@@ -84,6 +96,17 @@ hr{
   margin: 0 !important;
 }
 
+.ResumeTitle{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.ResumeDate{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-size: 70%
+}
+
 .col-9{
   text-align: left;
   justify-content: left;
@@ -91,7 +114,7 @@ hr{
 
 .ContactInfo{
   width: 100%;
-  height: 70vh;
+  height: 35vh;
   color: #282c34;
   background-color: #61dafb;
 }
@@ -109,6 +132,7 @@ hr{
 #ProfilePic {
   height: auto; 
   width: 30%;
+  padding-bottom: 5%
 }
 
 #Author {
