@@ -1,6 +1,6 @@
 import React from 'react'
 
-class ContactSegment extends React.Component{
+class ContactSegment extends React.Component {
     state = {
         id: '',
         contactPicId: '',
@@ -19,16 +19,16 @@ class ContactSegment extends React.Component{
         })
     }
 
-    render (){
+    render() {
         let segment
-        if (this.props.contactPic !== undefined){
-            segment = <img className = 'ContactPic' id = {this.state.contactPicId} src = {this.state.contactPic} alt = {this.state.contactPicDescription}/>
+        if (this.props.contactPic !== undefined) {
+            segment = <img className='ContactPic' id={this.state.contactPicId} src={this.state.contactPic} alt={this.state.contactPicDescription} />
         }
-        else{
+        else {
             segment = null
         }
 
-        return(
+        return (
             <div className='ContactSegment' id={this.state.id}>
                 {segment}
                 {this.state.contactDetails}

@@ -6,20 +6,31 @@ class MenuBar extends React.Component {
     state = {
         height: 0
     }
-    
+
+    updateHeight = this.updateHeight.bind(this)
+
     componentDidMount() {
-        const height = this.MenuBar.clientHeight
-        this.setState({
-            height: height
-        });
-        
+        this.updateHeight()
+        window.addEventListener("resize", this.updateHeight)
+    }
+   
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateHeight)
+    }
+   
+    componentDidUpdate() {
+        this.updateHeight()
+    }
+
+    updateHeight() {
+        if (this.state.height !== this.MenuBar.clientHeight)
+          this.setState({ height: this.MenuBar.clientHeight })
     }
 
     render() {
         let scrollOffset = -this.state.height
         return (
-            <div className='MenuBar'
-                ref={ (MenuBar) => this.MenuBar = MenuBar}>
+            <div className='MenuBar' ref={(MenuBar) => this.MenuBar = MenuBar}>
                 <h4 className='MenuItems'>
                     <Link
                         activeClass="active"

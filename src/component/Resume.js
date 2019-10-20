@@ -2,9 +2,9 @@ import React from 'react'
 import ResumeSegment from './ResumeSegment'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-class Resume extends React.Component{
-    render (){
-        return(
+class Resume extends React.Component {
+    render() {
+        return (
             <div className='Resume'>
                 {/* Resume Header */}
                 <ScrollAnimation
@@ -12,9 +12,9 @@ class Resume extends React.Component{
                     animateOnce={true}
                     animatePreScroll={false}
                 >
-                    <h1 className ='MenuHeader' id='Resume'>Resume</h1><br/>
+                    <h1 className='MenuHeader' id='Resume'>Resume</h1><br />
                 </ScrollAnimation>
-                
+
                 {/* ResumeHeader Education*/}
                 <ScrollAnimation
                     animateIn='fadeIn'
@@ -27,21 +27,21 @@ class Resume extends React.Component{
                                 <h3>Education</h3>
                             </div>
                         </div>
-                    </div><br/>
+                    </div><br />
                 </ScrollAnimation>
                 <ResumeSegment
                     id='CPP'
                     title='California State Polytechnic University, Pomona'
                     date='May 2019'
                     details={<p className='ResumeDetails'>
-                        Major: Computer Engineering, B.S.  <br/><br/>
+                        Major: Computer Engineering, B.S.  <br /><br />
                         Relevant Courses: C for Engineers, Object Oriented Programming, Data Structures for Engineers, Intro to Microcontrollers,
-                            Robotics, Microprocessor, Computer Architecture, OS for Embedded Applications<br/><br/>
+                            Robotics, Microprocessor, Computer Architecture, OS for Embedded Applications<br /><br />
                         Clubs: CPP AI, Institute of Electrical and Electronics Engineers, CPP Tennis Club (Treasurer)
                 </p>}
                 />
-                <hr/>
-                
+                <hr />
+
                 {/* ResumeHeader WorkExperience*/}
                 <ScrollAnimation
                     animateIn='fadeIn'
@@ -54,16 +54,16 @@ class Resume extends React.Component{
                                 <h3>Work Experience</h3>
                             </div>
                         </div>
-                    </div><br/>
+                    </div><br />
                 </ScrollAnimation>
                 <ResumeSegment
                     id='TCS'
                     title='Software Engineer'
-                    company = 'Tata Consultancy Services'
+                    company='Tata Consultancy Services'
                     location='Woodland Hills, CA'
                     date='June 2019 – Current'
                     details={<ul>
-                        <li>Automated full reports to check servers’ status and collect data using Python Selenium and Pyautogui. 
+                        <li>Automated full reports to check servers’ status and collect data using Python Selenium and Pyautogui.
                             Data was written into excel sheet and inserted into Oracle databases.</li>
                         <li>Applied computer vision in programs to detect and flag errors into databases. </li>
                         <li>Implemented multithreading to decrease program runtime.</li>
@@ -73,8 +73,8 @@ class Resume extends React.Component{
                 <ResumeSegment
                     id='NorthropGumman'
                     title='College Technical Intern'
-                    company = 'Northrop Grumman'
-                    location = 'Redondo Beach, CA'
+                    company='Northrop Grumman'
+                    location='Redondo Beach, CA'
                     date='June 2018 – August 2018'
                     details={<ul>
                         <li>Built a server implementing firmware updates, RAID 10 virtual disks, and OS Deployment</li>
@@ -94,8 +94,8 @@ class Resume extends React.Component{
                         <li>Managed Incident and Request Tickets (ServiceNow) for staff and professors.</li>
                     </ul>}
                 />
-                <hr/>
-                
+                <hr />
+
                 {/* ResumeHeader Projects*/}
                 <ScrollAnimation
                     animateIn='fadeIn'
@@ -108,7 +108,7 @@ class Resume extends React.Component{
                                 <h3>Projects</h3>
                             </div>
                         </div>
-                    </div><br/>
+                    </div><br />
                 </ScrollAnimation>
                 <ResumeSegment
                     id='CPPAITensorFlow'

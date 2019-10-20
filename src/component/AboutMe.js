@@ -9,32 +9,38 @@ class AboutMe extends React.Component {
     render() {
         return (
             <div className='AboutMe'>
-                {/* Profile Pic */}
-                <ScrollAnimation
-                    animateIn='fadeIn'
-                    animateOnce={true}
-                >
-                    <img
-                        id='ProfilePic'
-                        src={ProfilePic}
-                        alt='A smiling Jason Chang' />
-                </ScrollAnimation>
-
-                {/* About Me Header and AboutMeDetails */}
+                {/* About Me MenuHeader*/}
                 <ScrollAnimation
                     animateIn='fadeIn'
                     animateOnce={true}
                     animatePreScroll={false}
                 >
                     <h1 className='MenuHeader' id='AboutMe'>About Me</h1>
-                    <p className='AboutMeDetails'>
-                        Hi, my name is Jason Chang and I am a Software Engineer for Tata Consultancy Agency.
-                        I am currently working on automation, monitoring, and self healing projects.
-                        My main coding language is Python and have experience using Selenium and Pyautogui.
-                        I am interested in Machine Learning and would like to pursue a carreer in that field.
-                        I am also open to learning and expanding my skills such as HTML, CSS, and React.
-                    </p>
                 </ScrollAnimation>
+
+                <AboutMeSegment
+                    id='Profile'
+                    aboutMeHeader='Profile'
+                    aboutMeDetails={<div className='AboutMeDetails' id='ProfileDetails'>
+                        <div className='row'>
+                            <div className='col-4'>
+                                Hi,I am a Software Engineer. My main coding language is Python.
+                                I am interested in Machine Learning and would like to pursue a carreer in that field.
+                                I am also open to learning and expanding my skills such as HTML, CSS, and React.
+                            </div>
+                            <div className='col-4'>
+                                <img
+                                    id='ProfilePic'
+                                    src={ProfilePic}
+                                    alt='A smiling Jason Chang' />
+                            </div>
+                            <div className='col-4'>
+                                <p>Age: 22 Years</p>
+                                <p>Location: Los Angeles, California</p>
+                            </div>
+                        </div>
+                    </div>}
+                />
 
                 <AboutMeSegment
                     id='Tennis'
