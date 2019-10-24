@@ -24,7 +24,7 @@ class AboutMe extends React.Component {
                     aboutMeDetails={<div className='AboutMeDetails' id='ProfileDetails'>
                         <div className='row'>
                             <div className='col-4'>
-                                Hi,I am a Software Engineer. My main coding language is Python.
+                                Hello, my name is Jason Chang and I am a Software Engineer. My main coding language is Python.
                                 I am interested in Machine Learning and would like to pursue a carreer in that field.
                                 I am also open to learning and expanding my skills such as HTML, CSS, and React.
                             </div>
@@ -35,8 +35,7 @@ class AboutMe extends React.Component {
                                     alt='A smiling Jason Chang' />
                             </div>
                             <div className='col-4'>
-                                <p>Age: 22 Years</p>
-                                <p>Location: Los Angeles, California</p>
+                                <p>Age: 22 Years<br/>Location: Los Angeles, California</p>
                             </div>
                         </div>
                     </div>}

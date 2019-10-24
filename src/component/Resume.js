@@ -4,8 +4,14 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 class Resume extends React.Component {
     render() {
+        const style = {
+            paddingTop: '5%'
+        }
+
         return (
-            <div className='Resume'>
+            <div className='Resume'
+                style= {style}
+            >
                 {/* Resume Header */}
                 <ScrollAnimation
                     animateIn='fadeIn'
