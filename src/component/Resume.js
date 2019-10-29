@@ -1,11 +1,12 @@
 import React from 'react'
 import ResumeSegment from './ResumeSegment'
+import { connect } from 'react-redux'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class Resume extends React.Component {
     render() {
         const style = {
-            paddingTop: '5%'
+            paddingTop: this.props.menuSize
         }
 
         return (
@@ -151,5 +152,10 @@ class Resume extends React.Component {
         )
     }
 }
+const mapStateToProps = state => {
+    return {
+        menuSize: state.MenuSpecs.menuSize
+    }
+}
 
-export default Resume
+export default connect(mapStateToProps)(Resume)

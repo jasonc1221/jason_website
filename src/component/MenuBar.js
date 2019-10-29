@@ -1,5 +1,8 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import { Link } from 'react-scroll'
+import { connect } from 'react-redux'
+import { setMenuSize } from '../actions/MenuSizeAction'
 
 
 class MenuBar extends React.Component {
@@ -7,30 +10,33 @@ class MenuBar extends React.Component {
         height: 0
     }
 
-    updateHeight = this.updateHeight.bind(this)
-
     componentDidMount() {
-        this.updateHeight()
-        window.addEventListener("resize", this.updateHeight)
-    }
-   
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateHeight)
-    }
-   
-    componentDidUpdate() {
-        this.updateHeight()
+        let height = ReactDOM.findDOMNode(this).offsetHeight
+        this.props.setMenuSize(height)
+        window.addEventListener("resize", () => {
+            this.props.setMenuSize(height)
+            this.setState({ height: this.props.menuSize })
+        })
     }
 
-    updateHeight() {
-        if (this.state.height !== this.MenuBar.clientHeight)
-          this.setState({ height: this.MenuBar.clientHeight })
+    componentWillUnmount() {
+        let height = ReactDOM.findDOMNode(this).offsetHeight
+        window.removeEventListener("resize", this.props.setMenuSize(height))
+    }
+
+    // NEEDED for initial page render
+    componentDidUpdate() {
+        let height = ReactDOM.findDOMNode(this).offsetHeight
+        if (this.state.height !== height) {
+            this.props.setMenuSize(height)
+            this.setState({ height: this.props.menuSize })
+        }
     }
 
     render() {
         let scrollOffset = -this.state.height
         return (
-            <div className='MenuBar' ref={(MenuBar) => this.MenuBar = MenuBar}>
+            <div className='MenuBar'>
                 <h4 className='MenuItems'>
                     <Link
                         activeClass="active"
@@ -84,4 +90,10 @@ class MenuBar extends React.Component {
     }
 }
 
-export default MenuBar
+const mapStateToProps = state => {
+    return {
+        menuSize: state.MenuSpecs.menuSize
+    }
+}
+
+export default connect(mapStateToProps, { setMenuSize })(MenuBar)
