@@ -13,8 +13,8 @@ function App() {
   return (
     <Provider store = {store}>
       <div className="App">
-        <Banner/>
         <MenuBar/>
+        <Banner/>
         <AboutMe/>
         <Resume/>
         <ContactInfo />

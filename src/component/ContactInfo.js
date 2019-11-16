@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import ContactSegment from './ContactSegment'
 import MailLogo from '../asset/mail-logo.png'
 import PhoneLogo from '../asset/phone-logo.png'
@@ -7,8 +8,14 @@ import LinkedinLogo from '../asset/LI-In-Bug-White.png'
 
 class ContactInfo extends React.Component {
     render() {
+        const style = {
+            paddingTop: this.props.menuSize
+        }
+
         return (
-            <div className='ContactInfo'>
+            <div className='ContactInfo'
+                style= {style}
+            >
                 <h2>Contact Information</h2>
                 <ContactSegment
                     id='MailInfo'
@@ -46,4 +53,10 @@ class ContactInfo extends React.Component {
     }
 }
 
-export default ContactInfo
+const mapStateToProps = state => {
+    return {
+        menuSize: state.MenuSpecs.menuSize
+    }
+}
+
+export default connect(mapStateToProps)(ContactInfo)

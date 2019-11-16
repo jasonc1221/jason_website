@@ -23,12 +23,24 @@ class AboutMeSegment extends React.Component {
     }
 
     render() {
+        const style = {
+            backgroundImage: `url(${this.state.aboutMePic})`,
+            width: '100%',
+            height: '90vh',
+        }
+
         let picSegment
         if (this.props.aboutMePic !== undefined) {
-            picSegment = <img className='AboutMePic' id={this.state.picId} src={this.state.aboutMePic} alt={this.state.aboutMePicDescription} />
+            picSegment = 
+                <div className='AboutMePic'>
+                    <div className="parallax" style={style}>
+                        <h1 className='parallaxText'>{this.state.aboutMeHeader}</h1>
+                    </div>
+                </div>
         }
         else {
-            picSegment = null
+            picSegment = 
+            <h2 className='AboutMeHeader'>{this.state.aboutMeHeader}</h2>
         }
         return (
             <ScrollAnimation
@@ -37,7 +49,6 @@ class AboutMeSegment extends React.Component {
                 animatePreScroll={false}
             >
                 <div className='AboutMeSegment' id={this.state.id}>
-                    <h2 className='AboutMeHeader'>{this.state.aboutMeHeader}</h2>
                     {picSegment}
                     {this.state.aboutMeDetails}
                 </div>

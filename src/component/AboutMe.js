@@ -1,14 +1,21 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import AboutMeSegment from './AboutMeSegment'
-import ProfilePic from '../asset/ProfilePic4.jpg'
-import TennisPic from '../asset/TennisPic3.JPG'
-import BBQPic from '../asset/BBQPic.jpg'
+import ProfilePic from '../asset/ProfilePic.jpg'
+import TennisPic from '../asset/TennisPicSmall.jpg'
+import BBQPic from '../asset/BBQPicSmall.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class AboutMe extends React.Component {
     render() {
+        const style = {
+            paddingTop: this.props.menuSize
+        }
+
         return (
-            <div className='AboutMe'>
+            <div className='AboutMe' 
+                style= {style}
+            >
                 {/* About Me MenuHeader*/}
                 <ScrollAnimation
                     animateIn='fadeIn'
@@ -73,9 +80,9 @@ class AboutMe extends React.Component {
                         for catering events and food festivals
                     </p>}
                 />
-
+                <hr />
                 <AboutMeSegment
-                    id='FavoriteQupte'
+                    id='FavoriteQuote'
                     aboutMeHeader='Favorite Quote'
                     aboutMeDetails={<div>
                         <h3 className='Quote'>Happiness is not a destination<br />It is a method of life<br />
@@ -93,4 +100,10 @@ class AboutMe extends React.Component {
     }
 }
 
-export default AboutMe
+const mapStateToProps = state => {
+    return {
+        menuSize: state.MenuSpecs.menuSize
+    }
+}
+
+export default connect(mapStateToProps)(AboutMe)

@@ -1,5 +1,6 @@
 hr{
   width: 80%;
+  background: white;
 }
 
 .App {
@@ -11,12 +12,6 @@ hr{
   justify-content: center;
   font-size: calc(10px + 1.5vmin);
   color: white;
-}
-
-.Banner {
-  background-color: #61dafb;
-  width: 100%;
-  padding: 1% 0;
 }
 
 .MenuBar {
@@ -56,6 +51,27 @@ hr{
   color: #a147ca;
 }
 
+.Banner{
+  width: 100%;
+}
+
+.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallaxText{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+}
+
 .MenuHeader {
   color: #61dafb;
   font-family: 'Courier New', Courier, monospace;
@@ -63,18 +79,19 @@ hr{
 }
 
 .AboutMePic {
-  height: auto;
-  width: 90%;
-  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .AboutMeHeader{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  padding-top: 3%;
 }
 
 .AboutMeDetails {
-  padding: 1% 0 3%;
+  padding: 5% 0 5%;
   margin:0 10%; 
 }
 
@@ -129,9 +146,9 @@ hr{
 
 .ContactInfo{
   width: 100%;
-  height: 35vh;
   color: #282c34;
   background-color: #61dafb;
+  padding-bottom: 5vh;
 }
 
 .ContactPic {
@@ -159,4 +176,3 @@ hr{
 #Author {
   font-size: 70%;
 }
-
