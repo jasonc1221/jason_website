@@ -1,6 +1,5 @@
 import React from 'react'
 import BannerPic from '../asset/Calgary.jpg'
-import '../css/Banner.css'
 
 class Banner extends React.Component {
     render() {

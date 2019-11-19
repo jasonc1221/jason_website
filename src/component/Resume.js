@@ -70,11 +70,12 @@ class Resume extends React.Component {
                     location='Woodland Hills, CA'
                     date='June 2019 – Current'
                     details={<ul>
-                        <li>Automated full reports to check servers’ status and collect data using Python Selenium and Pyautogui.
-                            Data was written into excel sheet and inserted into Oracle databases.</li>
-                        <li>Applied computer vision in programs to detect and flag errors into databases. </li>
-                        <li>Implemented multithreading to decrease program runtime.</li>
-                        <li>Utilized Jupyter Notebook to parse and data manipulate log files from SoapUI responses.</li>
+                        <li>Automated full reports to check servers’ status and collect data using Python Selenium. 
+                            Data was written into excel sheet and inserted into SQL database.</li>
+                        <li>Designed and implemented tools for development team.</li>
+                        <li>Applied computer vision in programs to detect and flag errors from screenshots. </li>
+                        <li>Created self-healing applications to reduce downtime and increase operational throughput.</li>
+                        <li>Utilized Jupyter Notebook to parse and manipulate data in log files from SoapUI responses.</li>
                     </ul>}
                 />
                 <ResumeSegment
@@ -84,9 +85,9 @@ class Resume extends React.Component {
                     location='Redondo Beach, CA'
                     date='June 2018 – August 2018'
                     details={<ul>
-                        <li>Built a server implementing firmware updates, RAID 10 virtual disks, and OS Deployment</li>
-                        <li>Executed and submitted the appropriate workflows matching customer’s requests to manage a Virtual Testing Environment</li>
-                        <li>Worked with existing documents, provided updates to name changes, and looked for areas of opportunity to clean up language and better present technical information to customers</li>
+                        <li>Built a server implementing firmware updates, RAID 10 virtual disks, and OS Deployment.</li>
+                        <li>Executed and submitted the appropriate workflows matching customer’s requests to manage a Virtual Testing Environment.</li>
+                        <li>Worked with existing documents, provided updates to name changes, and looked for areas of opportunity to clean up language and better present technical information to customers.</li>
                     </ul>}
                 />
                 <ResumeSegment
@@ -135,6 +136,7 @@ class Resume extends React.Component {
                         <li>Assembled a RC Car and 3D printed robot arm controlled via smartphone Bluetooth.</li>
                         <li>Controlled RC Car and arm with Bluetooth signal received through Arduino microcontroller.</li>
                         <li>Designed and developed an app with Android Studio to connect and communicate to Arduino.</li>
+                        <a className='App-link' href="https://www.youtube.com/watch?v=jmNElQp-yrc">Click Here for Demo</a>
                     </ul>}
                 />
                 <ResumeSegment
