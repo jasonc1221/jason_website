@@ -31,7 +31,7 @@ class AboutMe extends React.Component {
                     aboutMeDetails={<div className='AboutMeDetails' id='ProfileDetails'>
                         <div className='row'>
                             <div className='col-4'>
-                                Hello, my name is Jason Chang and I am a Software Engineer. My main coding language is Python.
+                                Hello, my name is Jason Chang, and I am a Software Engineer. My main coding language is Python.
                                 I am interested in Machine Learning and would like to pursue a carreer in that field.
                                 I am also open to learning and expanding my skills such as HTML, CSS, and ReactJS.
                             </div>
@@ -42,7 +42,7 @@ class AboutMe extends React.Component {
                                     alt='A smiling Jason Chang' />
                             </div>
                             <div className='col-4'>
-                                <p>Age: 22 Years<br/>Location: Los Angeles, California</p>
+                                <p>Age: 23 Years<br/>Location: Los Angeles, California</p>
                             </div>
                         </div>
                     </div>}
@@ -83,7 +83,7 @@ class AboutMe extends React.Component {
                     id='FavoriteQuote'
                     aboutMeHeader='Favorite Quote'
                     aboutMeDetails={<div>
-                        <h3 className='Quote'>Happiness is not a destination.<br />It is a method of life<br />
+                        <h3 className='Quote'>Happiness is not a destination.<br />It is a method of life.<br />
                             <div id='Author'>- Burton Hills</div></h3>
                         <p className='AboutMeDetails'>
                             This quote inspires me to live everyday happily.

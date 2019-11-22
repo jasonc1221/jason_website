@@ -119,6 +119,17 @@ class Resume extends React.Component {
                     </div><br />
                 </ScrollAnimation>
                 <ResumeSegment
+                    id='PersonalWebsite'
+                    title='Personal Website'
+                    date='September 2019 – November 2019'
+                    details={<ul>
+                        <li>Designed and developed a website using HTML, CSS, Bootstrap, JavaScript, and ReactJS.</li>
+                        <li>Created CSS template working with CSS Background, positioning, text, margin, and padding.</li>
+                        <li>Maintained states in the stores and dispatched the actions using redux.</li>
+                        <li>Utilized AWS Services S3, VPC, Cloudfront, Route53, Certificate Manager to deploy and host with custom domain.</li>
+                    </ul>}
+                />
+                <ResumeSegment
                     id='CPPAITensorFlow'
                     title='CPPAI TensorFlow Speech to Text'
                     date='May 2018 – May 2019'
