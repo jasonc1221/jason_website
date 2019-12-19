@@ -13,8 +13,8 @@ class AboutMe extends React.Component {
         }
 
         return (
-            <div className='AboutMe' 
-                style= {style}
+            <div className='AboutMe'
+                style={style}
             >
                 {/* About Me MenuHeader*/}
                 <ScrollAnimation
@@ -29,21 +29,19 @@ class AboutMe extends React.Component {
                     id='Profile'
                     aboutMeHeader='Profile'
                     aboutMeDetails={<div className='AboutMeDetails' id='ProfileDetails'>
-                        <div className='row'>
-                            <div className='col-4'>
-                                Hello, my name is Jason Chang, and I am a Software Engineer. My main coding language is Python.
-                                I am interested in Machine Learning and would like to pursue a carreer in that field.
-                                I am also open to learning and expanding my skills such as HTML, CSS, and ReactJS.
-                            </div>
-                            <div className='col-4'>
-                                <img
-                                    id='ProfilePic'
-                                    src={ProfilePic}
-                                    alt='A smiling Jason Chang' />
-                            </div>
-                            <div className='col-4'>
-                                <p>Age: 23 Years<br/>Location: Los Angeles, California</p>
-                            </div>
+                        <div className='col'>
+                            Hello, my name is Jason Chang, and I am a Software Engineer. My main coding language is Python.
+                            I am interested in Machine Learning and would like to pursue a carreer in that field.
+                            I am also open to learning and expanding my skills such as HTML, CSS, and ReactJS.
+                        </div>
+                        <div className='col'>
+                            <img
+                                id='ProfilePic'
+                                src={ProfilePic}
+                                alt='A smiling Jason Chang' />
+                        </div>
+                        <div className='col'>
+                            <p>Age: 23 Years<br />Location: Los Angeles, California</p>
                         </div>
                     </div>}
                 />

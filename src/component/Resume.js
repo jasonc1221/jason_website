@@ -11,7 +11,7 @@ class Resume extends React.Component {
 
         return (
             <div className='Resume'
-                style= {style}
+                style={style}
             >
                 {/* Resume Header */}
                 <ScrollAnimation
@@ -40,12 +40,12 @@ class Resume extends React.Component {
                     id='CPP'
                     title='California State Polytechnic University, Pomona'
                     date='May 2019'
-                    details={<p className='ResumeDetails'>
-                        Major: Computer Engineering, B.S.  <br /><br />
-                        Relevant Courses: C for Engineers, Object Oriented Programming, Data Structures for Engineers, Intro to Microcontrollers,
-                            Robotics, Microprocessor, Computer Architecture, OS for Embedded Applications<br /><br />
-                        Clubs: CPP AI, Institute of Electrical and Electronics Engineers, CPP Tennis Club (Treasurer)
-                </p>}
+                    details={<ul>
+                        <div>Major: Computer Engineering, B.S.</div><br />
+                        <div>Relevant Courses: C for Engineers, Object Oriented Programming, Data Structures for Engineers, Intro to Microcontrollers,
+                            Robotics, Microprocessor, Computer Architecture, OS for Embedded Applications</div><br />
+                        <div>Clubs: CPP AI, Institute of Electrical and Electronics Engineers, CPP Tennis Club (Treasurer).</div>
+                    </ul>}
                 />
                 <hr />
 
@@ -70,7 +70,7 @@ class Resume extends React.Component {
                     location='Woodland Hills, CA'
                     date='June 2019 – Current'
                     details={<ul>
-                        <li>Automated full reports to check servers’ status and collect data using Python Selenium. 
+                        <li>Automated full reports to check servers’ status and collect data using Python Selenium.
                             Data was written into excel sheet and inserted into SQL database.</li>
                         <li>Designed and implemented tools for development team.</li>
                         <li>Applied computer vision in programs to detect and flag errors from screenshots. </li>

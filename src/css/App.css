@@ -29,15 +29,6 @@ hr{
   flex: 1;
 }
 
-@media all and (max-width: 700px) {
-  .MenuBar {
-    flex-wrap: wrap;
-  }
-  .MenuBar > .MenuItems {
-    flex: 1 1 50%;
-  }
-}
-
 .MenuItems:hover {
   color: #61dafb;
 }
@@ -166,7 +157,12 @@ hr{
   width: 100%;
 }
 
-#ProfileDetails .col-4{
+#ProfileDetails{
+  display: flex;
+}
+
+#ProfileDetails .col{
+  flex: 1;
   font-size: 90%;
   display: flex;
   align-items: center;
@@ -175,4 +171,29 @@ hr{
 
 #Author {
   font-size: 70%;
+}
+
+@media all and (max-width: 700px) {
+  .MenuBar {
+    flex-wrap: wrap;
+  }
+  .MenuBar > .MenuItems {
+    flex: 1 1 50%;
+  }
+
+  #ProfileDetails{
+    flex-wrap: wrap;
+  }
+
+  #ProfileDetails .col{
+    flex: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 1.5%;
+  }
+
+  #ProfilePic {
+    height: 50vh; 
+    width: auto;
+  }
 }
