@@ -6,10 +6,22 @@ import TennisPic from '../asset/TennisPicSmall.jpg'
 import BBQPic from '../asset/BBQPicSmall.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-class AboutMe extends React.Component {
+class AboutMe extends React.Component {    
     render() {
         const style = {
-            paddingTop: this.props.menuSize
+            paddingTop: this.props.menuSize,
+        }
+
+        function getAge(DOB) {
+            var today = new Date();
+            var birthDate = new Date(DOB);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age = age - 1;
+            }
+        
+            return age;
         }
 
         return (
@@ -41,7 +53,7 @@ class AboutMe extends React.Component {
                                 alt='A smiling Jason Chang' />
                         </div>
                         <div className='col'>
-                            <p>Age: 23 Years<br />Location: Los Angeles, California</p>
+                            <p>Age: {getAge('12/21/1996')} Years<br />Location: Los Angeles, California</p>
                         </div>
                     </div>}
                 />
