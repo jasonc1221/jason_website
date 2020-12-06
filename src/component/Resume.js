@@ -64,11 +64,26 @@ class Resume extends React.Component {
                     </div><br />
                 </ScrollAnimation>
                 <ResumeSegment
+                    id='System1'
+                    title='Software Engineer'
+                    company='System1'
+                    location='Venice, CA'
+                    date='March 2020 – Current'
+                    details={<ul>
+                        <li> Designed, created and enhanced Python Flask bot detection system (BDS)
+                             that filters through millions of requests per day to prevent users from spamming or scraping our websites.</li>
+                        <li>Automated Jenkins jobs to execute scripts, update database, and build and deploy Docker containers to AWS.</li>
+                        <li>Implemented Redis as a database to check if users’ parameters are members of blocking criteria and rules.</li>
+                        <li>Optimized BDS by reducing response time by 80% utilizing Datadog and New Relic metrics.</li>
+                        <li>Analyzed Snowflake SQL database to extract bot traffic patterns and pushed configs to AWS S3.</li>
+                    </ul>}
+                />
+                <ResumeSegment
                     id='TCS'
                     title='Software Engineer'
                     company='Tata Consultancy Services'
                     location='Woodland Hills, CA'
-                    date='June 2019 – Current'
+                    date='June 2019 – February 2020'
                     details={<ul>
                         <li>Automated full reports to check servers’ status and collect data using Python Selenium.
                             Data was written into excel sheet and inserted into SQL database.</li>
