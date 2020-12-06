@@ -70,7 +70,7 @@ class Resume extends React.Component {
                     location='Venice, CA'
                     date='March 2020 – Current'
                     details={<ul>
-                        <li> Designed, created and enhanced Python Flask bot detection system (BDS)
+                        <li> Designed, created, and enhanced Python Flask bot detection system (BDS)
                              that filters through millions of requests per day to prevent users from spamming or scraping our websites.</li>
                         <li>Automated Jenkins jobs to execute scripts, update database, and build and deploy Docker containers to AWS.</li>
                         <li>Implemented Redis as a database to check if users’ parameters are members of blocking criteria and rules.</li>
