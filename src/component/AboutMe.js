@@ -42,9 +42,9 @@ class AboutMe extends React.Component {
                     aboutMeHeader='Profile'
                     aboutMeDetails={<div className='AboutMeDetails' id='ProfileDetails'>
                         <div className='col'>
-                            Hello, my name is Jason Chang, and I am a Software Engineer. My main coding language is Python.
-                            I am interested in Machine Learning and would like to pursue a carreer in that field.
-                            I am also open to learning and expanding my skills such as HTML, CSS, and ReactJS.
+                            Hello, my name is Jason Chang, and I am a Software Engineer. 
+                            I love to play tennis, travel, and enjoy reading manga and watching anime.
+                            Always open to try and learn new things!
                         </div>
                         <div className='col'>
                             <img
@@ -83,7 +83,7 @@ class AboutMe extends React.Component {
                     aboutMePic={BBQPic}
                     aboutMeDetails={<p className='AboutMeDetails'>
                         I love cooking Argentine BBQ. I have been perfecting my barbecuing skills since high school.
-                        I'm experienced in cooking all types of meat such as Asado, Entrana, Mojella, Morcillia, Chorizo, and more!
+                        I'm experienced in cooking all types of meat such as Asado, Entrana, Mojella, Morcilla, Chorizo, and more!
                         On the side, I help my cousin's business, <a className='App-link' href="https://www.morechimichurri.com">MoreChimichurri</a>,
                         for catering events and food festivals
                     </p>}
