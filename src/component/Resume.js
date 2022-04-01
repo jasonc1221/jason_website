@@ -70,10 +70,14 @@ class Resume extends React.Component {
                     location='Venice, CA'
                     date='March 2020 – Current'
                     details={<ul>
-                        <li> Designed, created, and enhanced Python Flask bot detection system (BDS)
-                             that filters through millions of requests per day to prevent users from spamming or scraping our websites.</li>
-                        <li>Automated Jenkins jobs to execute scripts, update database, and build and deploy Docker containers to AWS.</li>
-                        <li>Implemented Redis as a database to check if users’ parameters are members of blocking criteria and rules.</li>
+                        <li>Designed, developed, and enhanced Python Flask bot detection system (BDS) to filter through millions of requests 
+                            per day to deny requests from spamming or scraping our websites.</li>
+                        <li>Centralized users' activity count in DynamoDB to rate limit aggressive bots.</li>
+                        <li>Automated Jenkins jobs to execute scripts, update databases, and build and deploy Docker containers to AWS.</li>
+                        <li>Implemented Redis to quickly update configurations and check if users’ parameters match our rules.</li>
+                        <li>Migrated millions of daily requests to be proxied through Cloudflare to utilize edge layer protection.</li>
+                        <li>Created and automated internal Cloudflare tools to deploy and update thousands of IPs across firewalls and rate limits.</li>
+                        <li>Cross-collaborated with other teams and architectured the flow to use BDS decision to trigger Cloudflare captcha.</li>
                         <li>Optimized BDS by reducing response time by 80% utilizing Datadog and New Relic metrics.</li>
                         <li>Analyzed Snowflake SQL database to extract bot traffic patterns and pushed configs to AWS S3.</li>
                     </ul>}
